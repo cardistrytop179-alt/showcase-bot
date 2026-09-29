@@ -1,0 +1,37 @@
+{
+  "name": "showcase-portfolio-bot",
+  "version": "1.0.0",
+  "description": "Telegram бот-портфолио с демонстрацией навыков работы с БД, API и автоматизацией",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "db:generate": "prisma generate",
+    "db:migrate": "prisma migrate dev",
+    "db:studio": "prisma studio",
+    "db:push": "prisma db push"
+  },
+  "keywords": [
+    "telegram-bot",
+    "portfolio",
+    "nodejs",
+    "prisma",
+    "postgresql"
+  ],
+  "author": "Miron",
+  "license": "MIT",
+  "dependencies": {
+    "@prisma/client": "^5.7.0",
+    "axios": "^1.6.2",
+    "dotenv": "^16.3.1",
+    "grammy": "^1.19.2",
+    "node-cron": "^3.0.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2",
+    "prisma": "^5.7.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
